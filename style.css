@@ -1,0 +1,19 @@
+/* style.css */
+
+/* Ensure draggable elements are touch‐friendly and appear above drop zones */
+.draggable-task,
+.draggable-pill {
+  user-select: none;
+  touch-action: none;
+  z-index: 1000;
+}
+
+/* Fix the width of the pill container in each row */
+.pill-container {
+  width: 200px;
+}
+
+/* Optionally, you can add a class for drop zones to enforce touch behavior */
+.dropzone {
+  touch-action: none;
+}
