@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Mobile-first meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- iOS Web App Capable -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Apple Touch Icon (replace with your own) -->
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <!-- Manifest (you can use a separate manifest.json if desired) -->
+    <link rel="manifest" href="manifest.json" />
+    <title>O3‑Mini‑High Planner</title>
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS for fast styling (optional) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-black">
+    <div id="root"></div>
+
+    <!-- External Libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- GSAP for snapping -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <!-- Interact.js for drag & drop -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <!-- Dexie.js for IndexedDB storage -->
+    <script src="https://cdn.jsdelivr.net/npm/dexie@latest/dist/dexie.js"></script>
+    <!-- Your main application code -->
+    <script type="text/babel" src="app.js"></script>
+  </body>
+</html>
